@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
 
-module.exports = nextConfig
+module.exports = {
+  reactStrictMode: true,
+  publicRuntimeConfig: {
+    // Add custom public directory path here
+    assetsPath: "/assets/",
+  },
+};

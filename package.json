@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "next build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
@@ -18,5 +20,8 @@
     "react-dom": "18.2.0",
     "react-hot-toast": "^2.4.0",
     "react-redux": "^8.0.5"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
